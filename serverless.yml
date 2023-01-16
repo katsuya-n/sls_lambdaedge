@@ -1,0 +1,16 @@
+service: knakano-sls-lambdaedge-project
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: handler.main
+    role: arn:aws:iam::${aws:accountId}:role/knakano_iam_for_lambda_test_role
+    # Lambda@Edgeで使うための設定
+    memorySize: 128
+    timeout: 5
