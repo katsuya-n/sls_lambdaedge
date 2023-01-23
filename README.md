@@ -16,3 +16,7 @@ AWSコンソール画面からLambda@Edgeへのデプロイをポチる
 
 - IAM Roleの管理はtfではなく、sls側でやったほうが良さそう。最初のインフラ作成時にエラーになりそうな気がする。
 - Dockerコンテナを立てて、Pythonを動かしたが方が良い？
+
+### 関連リポジトリ
+
+https://github.com/katsuya-n/cloudfront_lambdaedge_s3_tf
